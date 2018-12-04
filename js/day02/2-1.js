@@ -6,7 +6,7 @@ fs.readFile('input', 'utf8', (err, data) => {
   data.split('\n').forEach(str => {
     const obj = {};
     str.split('').forEach(c => {
-      obj[c] = obj[c] ? obj[c] + 1: 1;
+      obj[c] = obj[c] ? obj[c] + 1 : 1;
     });
     if (Object.values(obj).filter(v => v === 2).length) twos++;
     if (Object.values(obj).filter(v => v === 3).length) threes++;
